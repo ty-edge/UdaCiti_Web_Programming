@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <title>The Happy Blogger</title>
+        <link rel="stylesheet" href="CSS/style.css">
+    </head>
+    <body>
+        <!--- The following code is part of the Javascript sdk for the facebook share button -->
+        <div id="fb-root"></div>
+        <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v13.0" nonce="It9J7ZBt"></script>
+        <!--- End of Facebook sdk -->
+
+        <!--- This line intentionally left blank -->
+
+        <!--- This is the main page container -->
+        <div class="container_grid">
+            <section class="page_nav">
+                <nav>
+                    <ul class="menu_items">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li><a href="Blogs\current_blog.html">Featured</a></li>
+                        <li>Archive</li>
+                        <li>Connect</li>
+                    </ul>
+                </nav>
+                <header><h1>The Happy Blogger</h1></header>
+                <img src"images\hamburger.png" alt="hamburger menu icon" />
+            </section>
+
+
+            <!--- This is date and title bar -->
+            <section class="date_title_grid">
+                <div class="date_subgrid">May</div>
+                <div class="date_subgrid">27</div>
+                <h2 id="blog_title">The First Blog Feature</h2>
+            </section>
+            <!--- This is the thumbnail image for the blog cards -->
+            <article class="thumbnail_img">
+                <img src="https://www.fillmurray.com/200/300" alt="Filler pic of Bill Murray"/>
+            </article>
+            <section class="engagement_subgrid">
+                <!--- This is the engagement section where users can connect with author, share on social media, or make comments -->
+
+                <!--- Link to Author's Page -->
+                <div class="author_link">
+                    Contributed by <a href="https://www.github.com/tyedge">Ty Edge</a>
+                </div>
+                <!--- Social Media Share Buttons -->
+                <div class="socials">
+                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button" data-show-count="false">Tweet</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                    <div class="fb-share-button" data-href="https://developers.facebook.com/docs/plugins/" data-layout="button_count" data-size="small"><a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse" class="fb-xfbml-parse-ignore">Share</a></div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
