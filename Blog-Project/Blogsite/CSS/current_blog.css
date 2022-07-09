@@ -1,21 +1,113 @@
+/* This grid is for the entire page */
+.container{
+    display: grid;
+    width: 100%;
+    height: auto;
+    /*centering has to be done at each level*/
+    justify-content: center;
+    grid-template-columns: 100%;
+    grid-auto-rows: minmax(100px, auto);
+    /* grid-template-areas:
+    "hd"
+    "menu"
+    "main"
+    "comments"
+    "ft"
+    "box"; */
+    grid-gap: 40px;
+}
+
+/* The page navigation section contains the page header, hamburger icon, and navigation menu */
+/* Start page_nav section */
+.page_nav{
+    display: grid;
+    grid-template-columns: 90% auto;
+    grid-template-rows: 150px 100px;
+    grid-template-areas:
+        "hdr icn"
+        "mnu mnu";
+    align-items: center;
+    /*centering has to be done at each level*/
+    justify-content: center;
+
+    padding: 5px;
+}
+
+header{
+    display: flex;
+    flex-direction: row;
+    grid-area: hdr;
+}
+
+#hamburger_icon{
+    display: flex;
+    flex-direction: row-reverse;
+    /*centering has to be done at each level*/
+    justify-content: center;
+    /* max-width: 15%; */
+    height: 50%;
+    grid-area: icn;
+}
+
+.menu_items{
+    display: flex;
+    flex-direction: row;
+    /*content is centered on page, the in section grid, then within flex-box*/
+    justify-content: space-around;
+    list-style: none;
+    grid-area: mnu;
+    width: 100%
+}
+/* End page_nav section */
+
+
+/* Start blog_post section */
 .main_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 10px;
   grid-auto-rows: minmax(100px, auto);
 }
-.one {
+.hd {
   grid-column: 1 / 4;
   grid-row: 1;
 }
-.two {
+.main {
   grid-column: 2 / 4;
   grid-row: 1 / 4;
 }
-.three {
+.sb {
   grid-column: 1;
   grid-row: 2 / 4;
 }
+
+
+/* Start date_box section */
+.box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.box div {
+  background-color: #000000;
+  color: #ffffff;
+  text-align: center;
+  width: 150px;
+  height: auto;
+}
+
+
+/* Start footer section */
+.ft{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+    grid-auto-rows: minmax(200px, auto);
+}
+
 #about {
   grid-column: 1;
   grid-row: 3;

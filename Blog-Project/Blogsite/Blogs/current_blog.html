@@ -6,30 +6,28 @@
         <link rel="stylesheet" href="C:\Users\lispadmin\github\UdaCiti_Web_Programming\Blog-Project\Blogsite\CSS\current_blog.css">
     </head>
     <body>
-        <section class="page_nav">
-            <nav>
-                <ul class="menu_items">
-                    <li>Home</li>
-                    <li>About</li>
-                    <li><a href="C:\Users\lispadmin\github\UdaCiti_Web_Programming\Blog-Project\Blogsite\index.html">Home</a></li>
-                    <li>Archive</li>
-                    <li>Connect</li>
-                </ul>
-            </nav>
-            <header><h1>The Happy Blogger</h1></header>
-            <img src="C:\Users\lispadmin\github\UdaCiti_Web_Programming\Blog-Project\Blogsite\images\2x\hamburger.png" alt="hamburger menu icon" />
-        </section>
-        <section class="main_grid">
-            <div class="header">Header</div>
-            <div class="main">Main</div>
-            <div class="sb">Sidebar</div>
-            <div class="footer" id="About">About</div>
-            <div class="footer" id="Subscribe">Subscribe</div>
-            <div class="six" id="Share">Share</div>
-        </section>
-        <!--- This is the main container for the page -->
-        <div class="container_grid">
-            <!--- Comment section made with HTML Comment Box -->
+        <div class="container">
+            <section class="page_nav">
+                <header><h1>The Happy Blogger</h1></header>
+                <article id="hamburger_icon">
+                    <img src="C:\Users\lispadmin\github\UdaCiti_Web_Programming\Blog-Project\Blogsite\images\2x\hamburger-large.png" alt="hamburger menu icon" />
+                </article>
+                <nav>
+                    <ul class="menu_items">
+                        <li>Home</li>
+                        <li>About</li>
+                        <li><a href="C:\Users\lispadmin\github\UdaCiti_Web_Programming\Blog-Project\Blogsite\index.html">Home</a></li>
+                        <li>Archive</li>
+                        <li>Connect</li>
+                    </ul>
+                </nav>
+            </section>
+            <section class="main_grid">
+                <div class="hd">Header</div>
+                <div class="main">Main</div>
+                <div class="sb">Sidebar</div>
+            </section>
+            <!--- This is the main container for the page -->
             <div class="comments">
                 <!-- Begin wwww.htmlcommentbox.com -->
                 <div id="HCB_comment_box"><a href="http://www.htmlcommentbox.com">Comment Form</a> is loading comments...</div>
@@ -37,6 +35,17 @@
                 <script type="text/javascript" id="hcb"> /*<!--*/ if(!window.hcb_user){hcb_user={};} (function(){var s=document.createElement("script"), l=hcb_user.PAGE || (""+window.location).replace(/'/g,"%27"), h="https://www.htmlcommentbox.com";s.setAttribute("type","text/javascript");s.setAttribute("src", h+"/jread?page="+encodeURIComponent(l).replace("+","%2B")+"&opts=16798&num=10&ts=1653173639563");if (typeof s!="undefined") document.getElementsByTagName("head")[0].appendChild(s);})(); /*-->*/ </script>
                 <!-- End www.htmlcommentbox.com -->
             </div>
+            <div class="box">
+                <div><h3>POSTED</h3></div>
+                <div><h1>16</h1></div>
+                <div><h3>MAY 2022</h3></div>
+            </div>
+            <section class="ft">
+                <div class="footer" id="About">About</div>
+                <div class="footer" id="Subscribe">Subscribe</div>
+                <div class="six" id="Share">Share</div>
+            </section>
+
         </div>
     </body>
 </html>
